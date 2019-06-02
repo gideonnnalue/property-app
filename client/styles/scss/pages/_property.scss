@@ -1,0 +1,60 @@
+.property-box {
+  height: 50rem;
+  background-color: $color-property-background;
+  border-radius: 3rem;
+  box-shadow: 0 1.5rem 2.5rem rgba($color-black, .2);
+  padding: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+
+  &__logo {
+    width: $width-logo;
+    float: left;
+    @include clearfix;
+  }
+
+  &__heading {
+    color: $color-white;
+    display: block;
+    float: left;
+    @include clearfix;
+
+    span {
+      border-radius: 5rem;
+      width: .5rem;
+      padding: .25rem 1rem;
+      background: rgba($color-white, .2);
+    }
+  }
+
+  &__text-box {
+    width: 100%;
+    clear: both;
+    background-color: rgba($color-white, .2);
+    border-radius: 5rem;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    padding: 1.2rem 2rem;
+    border: none;
+    display: block;
+    font-size: $default-font-size;
+    transition: all .5s;
+    color: $color-white;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        border: 2px solid $color-primary;
+        border-radius: 5rem;
+    }
+  }
+}
+
+.property-box__property-list {
+  border-top: 1px solid rgba($color-white, .1);
+  padding: .5rem;
+}

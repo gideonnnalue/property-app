@@ -1,0 +1,20 @@
+.main-nav {
+  display: block;
+
+  &__logo {
+    width: $width-logo;
+    float: left;
+    &::after {
+      @include clearfix;
+    }
+  }
+
+  &__account {
+    float: right;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $color-primary;
+  }
+}

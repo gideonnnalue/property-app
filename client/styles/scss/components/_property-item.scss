@@ -1,0 +1,14 @@
+.property-item {
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: relative;
+    // border-bottom: .5px solid $color-green;
+
+    &__text {
+        font-size: $default-font-size;
+        color: $color-white;
+        width: 70%;
+        position: absolute;
+    }
+}
