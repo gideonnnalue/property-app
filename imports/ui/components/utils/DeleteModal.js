@@ -8,7 +8,7 @@ const DeleteModal = (props) => {
 
     Meteor.call('properties.remove', props.id);
 
-    props.handleClose;
+    props.handleClose();
   }
   return (
     <Modal show={props.show} onHide={props.handleClose} dialogClassName="nodal modal__delete">
